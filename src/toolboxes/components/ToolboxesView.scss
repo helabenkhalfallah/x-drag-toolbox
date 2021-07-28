@@ -2,7 +2,8 @@
 @import "react-resizable/css/styles.css";
 
 .react-grid-layout {
-    background: whitesmoke;
+    margin-top: 1rem;
+    background: #EFF9FE;
     min-height: 10rem;
 }
 
@@ -35,10 +36,10 @@
     padding: 10px;
 }
 
-.droppable-container {
+.tools-container {
     display: block;
-    max-height: 100vh;
-    border-right: 2px solid whitesmoke;
+    height: 100vh;
+    border-right: 1px solid #0252BF;
     overflow-x: scroll;
     overflow-y: scroll;
 }
@@ -46,8 +47,18 @@
 .code-container {
     display: block;
     width: 100%;
-    max-height: 100vh;
+    height: 100vh;
     overflow-x: hidden;
     overflow-y: scroll;
-    border-left: 2px solid whitesmoke;
+    border-left: 1px solid #0252BF;
+}
+
+.tools-title {
+    text-shadow: 1px 1px 2px rgb(231, 231, 254);
+    text-align: center;
+    color: #0252BF !important;
+    text-transform: uppercase;
+    font-size: 1.5rem !important;
+    font-weight: 500 !important;
+    margin-top: 1rem;
 }

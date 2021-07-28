@@ -50,7 +50,8 @@ export const Tools = [
     component: (
       <Header
         style={{
-          backgroundColor: '#3ba0e9',
+          backgroundColor: '#4195D3',
+          color: 'white',
           cursor: 'pointer',
           width: '100%',
         }}
@@ -60,7 +61,8 @@ export const Tools = [
     ),
     componentStr: `<Header
         style={{
-          backgroundColor: '#3ba0e9',
+          backgroundColor: '#4195D3',
+          color: 'white',
           width: '100%',
         }}
       >
@@ -77,7 +79,8 @@ export const Tools = [
     component: (
       <Footer
         style={{
-          backgroundColor: '#7dbcea',
+          backgroundColor: '#BF60B1',
+          color: 'white',
           cursor: 'pointer',
         }}
       >
@@ -86,7 +89,8 @@ export const Tools = [
     ),
     componentStr: `<Footer
         style={{
-          backgroundColor: '#7dbcea',
+          backgroundColor: '#BF60B1',
+          color: 'white',
           width: '100%',
         }}
       >
@@ -109,9 +113,12 @@ export const Tools = [
           cursor: 'pointer',
           minWidth: '2px',
           minHeight: '33px',
-          backgroundColor: 'wheat',
+          backgroundColor: '#ECBD45',
+          color: 'white',
         }}
-      />
+      >
+        Space
+      </div>
     ),
     componentStr: '',
   },
@@ -184,16 +191,16 @@ export const Tools = [
         }}
       >
         <Step
-          title="Terminé"
-          description="Une description supplémentaire"
+          title="Terminated"
+          description="Additional description"
         />
         <Step
-          title="En cours"
-          description="Une description supplémentaire"
+          title="In progress"
+          description="Additional description"
         />
         <Step
-          title="En attente"
-          description="Une description supplémentaire"
+          title="Waiting"
+          description="Additional description"
         />
       </Steps>
     ),
@@ -205,15 +212,15 @@ export const Tools = [
       >
         <Step
           title="Terminé"
-          description="Une description supplémentaire"
+          description="Additional description"
         />
         <Step
-          title="En cours"
-          description="Une description supplémentaire"
+          title="In progress"
+          description="Additional description"
         />
         <Step
-          title="En attente"
-          description="Une description supplémentaire"
+          title="Waiting"
+          description="Additional description"
         />
       </Steps>`,
   },
@@ -375,7 +382,7 @@ export const Tools = [
         padding: '10px',
         width: '325px',
         cursor: 'pointer',
-        backgroundColor: 'cornflowerblue',
+        backgroundColor: '#5138eeAA',
       }}
       >
         <Select
@@ -413,7 +420,7 @@ export const Tools = [
         padding: '10px',
         width: '325px',
         cursor: 'pointer',
-        backgroundColor: 'cornflowerblue',
+        backgroundColor: '#5138eeBB',
       }}
       >
         <Input

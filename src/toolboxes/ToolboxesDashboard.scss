@@ -2,14 +2,40 @@
     min-height: 100vh;
     width: 100vw;
     overflow: hidden;
-    
-    &--header {
-        background-color: cornflowerblue;
-        height: 10%;
+
+    &__header {
+        background-color: white;
+        padding: 0;
+        width: 100%;
+        height: 4rem;
+
+        &-content {
+            border-bottom: 1px solid #0252BF;
+            background-color: white;
+            height:95%;
+        }
+
+        &-title {
+            color: #0252BF;
+            text-shadow: 1px 1px 2px rgb(231, 231, 254);
+            text-transform: uppercase;
+            font-size: 2rem;
+            font-weight: 600;
+            margin-left: 2rem;
+        }
+
+        &-subtitle {
+            color: #4195D3;
+            text-transform: uppercase;
+            font-size: 1rem;
+            font-weight: 300;
+            margin-left: 2px;
+        }
     }
 
-    &--content {
+    &__content {
         background-color: white;
+        width: 100%;
         height: auto;
     }
 }

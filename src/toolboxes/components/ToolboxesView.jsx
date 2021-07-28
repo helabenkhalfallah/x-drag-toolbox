@@ -3,7 +3,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import RGL, { WidthProvider, } from 'react-grid-layout';
-import { Row, Col, Typography, } from 'antd';
+import {
+  Row,
+  Col,
+  Typography,
+} from 'antd';
 import ToolboxesList from './ToolboxesList';
 import ToolboxesCodeGenerator from './ToolboxesCodeGenerator';
 import './ToolboxesView.scss';
@@ -46,18 +50,24 @@ class ToolboxesView extends React.Component {
         data-grid={tool}
       >
         {layout[i].component}
-        <span
-          role="button"
-          style={{
-            position: 'absolute',
-            right: '2px',
-            top: 0,
-            cursor: 'pointer',
-          }}
-          onClick={() => this.onRemoveItem(tool)}
-        >
-          x
-        </span>
+        {layout[i].componentStr && (
+          <span
+            role="button"
+            style={{
+              position: 'absolute',
+              right: '10px',
+              top: 0,
+              cursor: 'pointer',
+              width: '6px',
+              height: '2px',
+              fontSize: '1rem',
+              fontWeight: '600',
+            }}
+            onClick={() => this.onRemoveItem(tool)}
+          >
+            x
+          </span>
+        )}
       </div>
     ));
   }
@@ -138,8 +148,14 @@ class ToolboxesView extends React.Component {
         justify="center"
         align="top"
       >
-        <Col span={4}>
-          <Title level={2}>
+        <Col
+          span={4}
+          className="tools-container"
+        >
+          <Title
+            level={2}
+            className="tools-title"
+          >
             Components
           </Title>
           <Text strong>
@@ -150,11 +166,14 @@ class ToolboxesView extends React.Component {
           />
         </Col>
         <Col span={10}>
-          <Title level={2}>
+          <Title
+            level={2}
+            className="tools-title"
+          >
             Your web page
           </Title>
           <Text strong>
-            2. Drag/Drop components here
+            2. Drag/Drop component here
           </Text>
           <br />
           <Text strong>
@@ -177,12 +196,18 @@ class ToolboxesView extends React.Component {
             {this.generateDOM()}
           </GridLayout>
         </Col>
-        <Col span={10}>
-          <Title level={2}>
+        <Col
+          span={10}
+          className="code-container"
+        >
+          <Title
+            level={2}
+            className="tools-title"
+          >
             Code (jsx)
           </Title>
           <Text strong>
-            3. Auto-generated source code (copy/paste)
+            3. Auto-generated code (copy/paste)
           </Text>
           <ToolboxesCodeGenerator
             layouts={layouts}

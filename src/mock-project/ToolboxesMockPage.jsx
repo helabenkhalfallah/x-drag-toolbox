@@ -42,7 +42,8 @@ const ToolboxesMockPage = () => (
             >
               <Header
                 style={{
-                  backgroundColor: '#3ba0e9',
+                  backgroundColor: '#4195D3',
+                  color: 'white',
                   width: '100%',
                 }}
               >
@@ -102,15 +103,15 @@ const ToolboxesMockPage = () => (
               >
                 <Step
                   title="Terminé"
-                  description="Une description supplémentaire"
+                  description="Additional description"
                 />
                 <Step
-                  title="En cours"
-                  description="Une description supplémentaire"
+                  title="In progress"
+                  description="Additional description"
                 />
                 <Step
-                  title="En attente"
-                  description="Une description supplémentaire"
+                  title="Waiting"
+                  description="Additional description"
                 />
               </Steps>
             </Col>
@@ -122,53 +123,18 @@ const ToolboxesMockPage = () => (
             ]}
           >
             <Col
-              span={11}
-              offset={0}
-            >
-              <Select
-                style={{
-                  width: '100%',
-                }}
-                defaultValue="Madame"
-              >
-                <Option value="Madame">Madame</Option>
-                <Option value="Monsieur">Monsieur</Option>
-                <Option value="Mademoiselle">Mademoiselle</Option>
-              </Select>
-            </Col>
-
-            <Col
-              span={4}
-              offset={0}
-            >
-              <Button
-                type="primary"
-                size="small"
-              >
-                Button Small
-              </Button>
-            </Col>
-
-            <Col
               span={6}
               offset={0}
             >
               <Button
-                danger
-                type="primary"
+                type="default"
               >
-                Button Danger
+                Button Default
               </Button>
             </Col>
-          </Row>
-          <Row
-            gutter={[
-              2,
-              10,
-            ]}
-          >
+
             <Col
-              span={24}
+              span={18}
               offset={0}
             />
           </Row>
@@ -210,95 +176,11 @@ const ToolboxesMockPage = () => (
             <Col
               span={24}
               offset={0}
-            />
-          </Row>
-          <Row
-            gutter={[
-              2,
-              10,
-            ]}
-          >
-            <Col
-              span={11}
-              offset={0}
-            >
-              <Input
-                style={{
-                  width: '100%',
-                }}
-                placeholder="Tap Your Text Here"
-              />
-            </Col>
-          </Row>
-          <Row
-            gutter={[
-              2,
-              10,
-            ]}
-          >
-            <Col
-              span={6}
-              offset={0}
-            >
-              <Radio.Group
-                value="iOS"
-              >
-                <Radio value="iOS">iOS</Radio>
-                <Radio value="Android">Android</Radio>
-              </Radio.Group>
-            </Col>
-
-            <Col
-              span={6}
-              offset={0}
-            >
-              <Checkbox>
-                Accept - Decline
-              </Checkbox>
-            </Col>
-          </Row>
-          <Row
-            gutter={[
-              2,
-              10,
-            ]}
-          >
-            <Col
-              span={24}
-              offset={0}
-            >
-              <List
-                header={<div>Header</div>}
-                footer={<div>Footer</div>}
-                bordered
-                dataSource={[
-                  'Ego vero sic intellego, Patres conscripti, nos hoc',
-                  'Etenim si attendere diligenter, existimare vere de',
-                  'Has autem provincias, quas Orontes ambiens amnis',
-                  'In his tractibus navigerum nusquam visitur flumen',
-                  'Has autem provincias, quas Orontes ambiens amnis',
-                ]}
-                renderItem={(item) => (
-                  <List.Item>
-                    {item}
-                  </List.Item>
-                )}
-              />
-            </Col>
-          </Row>
-          <Row
-            gutter={[
-              2,
-              10,
-            ]}
-          >
-            <Col
-              span={24}
-              offset={0}
             >
               <Footer
                 style={{
-                  backgroundColor: '#7dbcea',
+                  backgroundColor: '#BF60B1',
+                  color: 'white',
                   width: '100%',
                 }}
               >

@@ -85,9 +85,7 @@ const ToolboxesCodeGenerator = ({
   ]);
 
   return (
-    <div
-      className="code-container"
-    >
+    <div>
       {contextHolder}
       <Row
         gutter={[

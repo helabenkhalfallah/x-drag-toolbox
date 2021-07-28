@@ -5,7 +5,7 @@ import { Tools, } from '../data/Tools';
 const ToolboxesList = ({
   onItemDragged,
 }) => (
-  <div className="droppable-container">
+  <div>
     {Tools.map((tool) => (
       <div
         key={tool.key}

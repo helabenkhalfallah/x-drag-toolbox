@@ -1,5 +1,7 @@
 import React, { Component, } from 'react';
-import Layout from 'antd/es/layout';
+import {
+  Layout,
+} from 'antd';
 import ToolboxesView from './components/ToolboxesView';
 import './ToolboxesDashboard.scss';
 
@@ -19,13 +21,26 @@ class ToolboxesDashboard extends Component {
         className="toolboxes_dashboard"
       >
         <Header
-          className="toolboxes_dashboard--header"
+          className="toolboxes_dashboard__header"
         >
-          Header
+          <div
+            className="toolboxes_dashboard__header-content"
+          >
+            <h2
+              className="toolboxes_dashboard__header-title"
+            >
+              x-Drag
+              <span
+                className="toolboxes_dashboard__header-subtitle"
+              >
+                (design to code)
+              </span>
+            </h2>
+          </div>
         </Header>
         <Layout>
           <Content
-            className="toolboxes_dashboard--content"
+            className="toolboxes_dashboard__content"
           >
             <ToolboxesView />
           </Content>
