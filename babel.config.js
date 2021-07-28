@@ -33,14 +33,6 @@ module.exports = function (api) {
     ],
     '@babel/plugin-proposal-optional-chaining',
     '@babel/plugin-transform-regenerator',
-    [
-      'import',
-      {
-        libraryName: 'antd',
-        libraryDirectory: 'lib',
-        style: true,
-      },
-    ],
   ];
 
   return {
