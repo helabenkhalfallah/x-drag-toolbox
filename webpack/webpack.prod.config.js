@@ -11,7 +11,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, '../dist'),
-    filename: 'react-redux-toolboxes-bundle.js',
+    filename: 'x-drag-toolbox-bundle.js',
   },
   module: {
     rules: [
@@ -83,7 +83,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'react-redux-toolboxes-style.css',
+      filename: 'x-drag-toolbox-style.css',
     }),
   ],
   optimization: {

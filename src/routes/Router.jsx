@@ -10,12 +10,13 @@ import LazyRoute from './LazyRoute';
 import Path from './Path';
 
 const {
-  TOOLBOXES_PATH,
+  TOOLBOX_PATH,
+  TOOLBOX_MOCK_PATH,
 } = Path;
 
 const {
-  ToolboxesDashboard,
-  ToolboxesMockPage,
+  ToolboxDashboard,
+  ToolboxMockPage,
 } = LazyRoute;
 
 const Router = () => (
@@ -27,27 +28,27 @@ const Router = () => (
       <Switch>
         <Route
           exact
-          path={TOOLBOXES_PATH}
+          path={TOOLBOX_PATH}
           component={(props) => (
-            <ToolboxesDashboard
+            <ToolboxDashboard
               {...props}
-              page="ToolboxesDashboard"
+              page="ToolboxDashboard"
             />
           )}
         />
         <Route
           exact
-          path="/mock-page"
+          path={TOOLBOX_MOCK_PATH}
           component={(props) => (
-            <ToolboxesMockPage
+            <ToolboxMockPage
               {...props}
-              page="ToolboxesMockPage"
+              page="ToolboxMockPage"
             />
           )}
         />
         <Redirect
           from="/"
-          to={TOOLBOXES_PATH}
+          to={TOOLBOX_PATH}
         />
       </Switch>
     </BrowserRouter>

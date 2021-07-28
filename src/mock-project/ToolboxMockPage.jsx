@@ -22,7 +22,7 @@ const {
 } = Layout;
 
 // eslint-disable-next-line max-lines-per-function
-const ToolboxesMockPage = () => (
+const ToolboxMockPage = () => (
   <>
     <Row
       justify="start"
@@ -194,4 +194,4 @@ const ToolboxesMockPage = () => (
   </>
 );
 
-export default ToolboxesMockPage;
+export default ToolboxMockPage;

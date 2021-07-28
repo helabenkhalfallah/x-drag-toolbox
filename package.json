@@ -1,7 +1,7 @@
 {
-  "name": "react-redux-toolboxes",
+  "name": "x-drag-toolbox",
   "version": "0.0.1",
-  "description": "React Redux Toolboxes",
+  "description": "x-drag Toolbox",
   "main": "index.js",
   "sideEffect": [
     "*.css",
@@ -26,14 +26,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/helabenkhalfallah/react-redux-toolboxes.git"
+    "url": "git+https://github.com/helabenkhalfallah/x-drag-toolbox.git"
   },
   "author": "Ben Khalfallah Héla",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/helabenkhalfallah/react-redux-toolboxes/issues"
+    "url": "https://github.com/helabenkhalfallah/x-drag-toolbox/issues"
   },
-  "homepage": "https://github.com/helabenkhalfallah/react-redux-toolboxes#readme",
+  "homepage": "https://github.com/helabenkhalfallah/x-drag-toolbox#readme",
   "dependencies": {
     "@ant-design/icons": "=4.2.2",
     "@loadable/component": "=5.13.2",

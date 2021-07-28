@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Tools, } from '../data/Tools';
 
-const ToolboxesList = ({
+const ToolboxList = ({
   onItemDragged,
 }) => (
   <div>
@@ -27,8 +27,8 @@ const ToolboxesList = ({
   </div>
 );
 
-ToolboxesList.propTypes = {
+ToolboxList.propTypes = {
   onItemDragged: PropTypes.func.isRequired,
 };
 
-export default ToolboxesList;
+export default ToolboxList;

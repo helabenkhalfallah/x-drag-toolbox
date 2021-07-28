@@ -8,9 +8,9 @@ import {
   Col,
   Typography,
 } from 'antd';
-import ToolboxesList from './ToolboxesList';
-import ToolboxesCodeGenerator from './ToolboxesCodeGenerator';
-import './ToolboxesView.scss';
+import ToolboxList from './ToolboxList';
+import ToolboxCodeView from './ToolboxCodeView';
+import './ToolboxView.scss';
 
 const {
   Text,
@@ -19,7 +19,7 @@ const {
 
 const GridLayout = WidthProvider(RGL);
 
-class ToolboxesView extends React.Component {
+class ToolboxView extends React.Component {
   lastIndex = 0;
 
     static propTypes = {
@@ -161,7 +161,7 @@ class ToolboxesView extends React.Component {
           <Text strong>
             1. Choose a component
           </Text>
-          <ToolboxesList
+          <ToolboxList
             onItemDragged={(item) => this.onItemDragged(item)}
           />
         </Col>
@@ -209,7 +209,7 @@ class ToolboxesView extends React.Component {
           <Text strong>
             3. Auto-generated code (copy/paste)
           </Text>
-          <ToolboxesCodeGenerator
+          <ToolboxCodeView
             layouts={layouts}
           />
         </Col>
@@ -218,4 +218,4 @@ class ToolboxesView extends React.Component {
   }
 }
 
-export default ToolboxesView;
+export default ToolboxView;

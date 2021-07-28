@@ -7,7 +7,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, '../dist'),
-    filename: 'react-redux-toolboxes-bundle.js',
+    filename: 'x-drag-toolbox-bundle.js',
   },
   module: {
     rules: [
