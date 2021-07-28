@@ -20,8 +20,13 @@ x-drag-toolbox is fully written using Javascript and React !
 - It's like a sketching tool.
 - It's like an IDE.
 
+## Supported platforms:
+
+Actually **x-drag-toolbox** is only available for Chrome & Firefox and for desktop.
+
 ## Next steps :
 - Editable code : code -> design.
 - Display a configuration palette according to the chosen component.
 - Add more components.
 - Make the change of components of the Design System more flexible.
+- Enhance responsive.
