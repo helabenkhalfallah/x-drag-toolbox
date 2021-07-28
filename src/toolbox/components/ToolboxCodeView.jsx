@@ -37,7 +37,8 @@ const ToolboxCodeView = ({
     : []);
 
   useEffect(() => {
-    const htmlString = `const MyAwesomeView = () => (
+    const htmlString = `
+const MyAwesomeView = () => (
 <>${CodeLayout().join('')}
 </>
 );`;

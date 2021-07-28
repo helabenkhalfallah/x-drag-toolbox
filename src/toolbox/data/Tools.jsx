@@ -1,16 +1,14 @@
 import React from 'react';
 import { v4 as uuidv4, } from 'uuid';
-import {
-  Layout,
-  Steps,
-  List,
-  Button,
-  Select,
-  Input,
-  Radio,
-  Checkbox,
-  Tabs,
-} from 'antd';
+import Layout from 'antd/es/layout';
+import Steps from 'antd/es/steps';
+import List from 'antd/es/list';
+import Select from 'antd/es/select';
+import Input from 'antd/es/input';
+import Radio from 'antd/es/radio';
+import Checkbox from 'antd/es/checkbox';
+import Tabs from 'antd/es/tabs';
+import Button from 'antd/es/button';
 
 const { TabPane, } = Tabs;
 const { Step, } = Steps;
