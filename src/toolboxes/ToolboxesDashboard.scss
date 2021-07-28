@@ -1,0 +1,15 @@
+.toolboxes_dashboard {
+    min-height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    
+    &--header {
+        background-color: cornflowerblue;
+        height: 10%;
+    }
+
+    &--content {
+        background-color: white;
+        height: auto;
+    }
+}
