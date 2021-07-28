@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Tools, } from './Tools';
+import { Tools, } from '../data/Tools';
 
 const ToolboxesList = ({
   onItemDragged,

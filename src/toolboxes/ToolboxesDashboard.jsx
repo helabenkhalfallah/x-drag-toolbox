@@ -1,6 +1,6 @@
 import React, { Component, } from 'react';
 import Layout from 'antd/es/layout';
-import ToolboxesView from './ToolboxesView';
+import ToolboxesView from './components/ToolboxesView';
 import './ToolboxesDashboard.scss';
 
 const {
@@ -22,7 +22,6 @@ class ToolboxesDashboard extends Component {
           className="toolboxes_dashboard--header"
         >
           Header
-
         </Header>
         <Layout>
           <Content

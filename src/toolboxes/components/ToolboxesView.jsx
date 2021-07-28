@@ -140,10 +140,10 @@ class ToolboxesView extends React.Component {
       >
         <Col span={4}>
           <Title level={2}>
-            Composants
+            Components
           </Title>
           <Text strong>
-            1. Choisir votre composant
+            1. Choose a component
           </Text>
           <ToolboxesList
             onItemDragged={(item) => this.onItemDragged(item)}
@@ -151,10 +151,14 @@ class ToolboxesView extends React.Component {
         </Col>
         <Col span={10}>
           <Title level={2}>
-            Page à construire
+            Your web page
           </Title>
           <Text strong>
-            2. Drag/Drop des composants ici
+            2. Drag/Drop components here
+          </Text>
+          <br />
+          <Text strong>
+            3. Move components inside the layout
           </Text>
           <GridLayout
             {...this.props}
@@ -178,7 +182,7 @@ class ToolboxesView extends React.Component {
             Code (jsx)
           </Title>
           <Text strong>
-            3. Code auto-généré (copier/coller)
+            3. Auto-generated source code (copy/paste)
           </Text>
           <ToolboxesCodeGenerator
             layouts={layouts}
