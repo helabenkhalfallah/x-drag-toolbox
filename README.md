@@ -3,6 +3,8 @@
 ## What's x-drag-toolbox ?
 x-drag-toolbox allows you to: Drag and drop components, rearrange them and the code will change dynamically. You can easily copy & paste the code!
 
+![x-drag-toolbox](x-drag-toolbox.gif)
+
 The idea is inspired by Xcode, Android Studio, Matlab Toolbox, ...
 Have a way to dynamically and flexibly create an html view and get the corresponding code.
 
@@ -12,13 +14,14 @@ x-drag-toolbox use a grid of 24 columns.
 
 x-drag-toolbox is fully written using Javascript and React !
 
-![x-drag-toolbox help](x-drag-help.png)
-
-
 **x-drag-toolbox :**
 - Can help developers who want to start web development with React and don't know where to start.
 - It's like a sketching tool.
 - It's like an IDE.
+
+## How to use ?
+
+![x-drag-toolbox help](x-drag-help.png)
 
 ## Supported platforms:
 
