@@ -76,7 +76,7 @@ class ToolboxView extends React.Component {
     const {
       layouts,
     } = this.state;
-    const newLayouts = layouts.filter((value) => value.key !== item.key);
+    const newLayouts = layouts.filter((value) => value.i !== item.i);
     this.setState({
       layouts: newLayouts,
     });
