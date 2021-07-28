@@ -20,6 +20,7 @@ import 'antd/es/select/style/css';
 import 'antd/es/steps/style/css';
 import 'antd/es/checkbox/style/css';
 import 'antd/es/radio/style/css';
+import 'antd/es/notification/style/css';
 
 ReactDOM.render(
   // eslint-disable-next-line react/jsx-filename-extension
