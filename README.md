@@ -10,14 +10,15 @@ x-drag-toolbox uses antd components as a Design System. You can easily adapt it 
 
 x-drag-toolbox use a grid of 24 columns.
 
-x-drag-toolbox is fully written using JS and React !
+x-drag-toolbox is fully written using Javascript and React !
 
 ![x-drag-toolbox help](x-drag-help.png)
 
 
-## Why x-drag-toolbox? 
-- For developers who want to start web development with React and they dont know from where begin. 
+**x-drag-toolbox :**
+- Can help developers who want to start web development with React and don't know where to start.
 - It's like a sketching tool.
+- It's like an IDE.
 
 ## Next steps :
 - Editable code : code -> design.
