@@ -22,7 +22,7 @@ x-drag-toolbox is fully written using Javascript and React !
 
 ## Supported platforms:
 
-Actually **x-drag-toolbox** is only available for Chrome & Firefox and for desktop.
+Actually **x-drag-toolbox** is only available for Chrome and Firefox and for desktop only.
 
 ## Next steps :
 - Editable code : code -> design.
