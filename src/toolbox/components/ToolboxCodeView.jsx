@@ -31,17 +31,16 @@ const ToolboxCodeView = ({
       const items = dynamicCodeLayout[line].sort((a, b) => a.x - b.x);
       return `
   <Row
-    gutter={[
-      2,
-      10,
-    ]}
+    gutter={[ 2, 10 ]}
   >${ToolboxCodeLayout(items).join('')}  </Row>`;
     })
     : []);
 
   useEffect(() => {
-    const htmlString = `<>${CodeLayout().join('')}
-</>`;
+    const htmlString = `const MyAwesomeView = () => (
+<>${CodeLayout().join('')}
+</>
+);`;
     setPrettifiedHtml(htmlString);
   }, [
     layouts,
@@ -90,7 +89,7 @@ const ToolboxCodeView = ({
         <Col span={24}>
           {prettifiedHtml && (
             <SyntaxHighlighter
-              language="xml"
+              language="html"
               showLineNumbers={false}
               wrapLines
               useInlineStyles
