@@ -17,6 +17,9 @@ import 'antd/es/avatar/style/css';
 import 'antd/es/modal/style/css';
 import 'antd/es/result/style/css';
 import 'antd/es/select/style/css';
+import 'antd/es/steps/style/css';
+import 'antd/es/checkbox/style/css';
+import 'antd/es/radio/style/css';
 
 ReactDOM.render(
   // eslint-disable-next-line react/jsx-filename-extension
