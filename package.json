@@ -8,8 +8,8 @@
     "*.scss"
   ],
   "scripts": {
-    "start:dev": "webpack serve -c webpack/webpack.dev.config.js --progress --color",
-    "build:prod": "webpack -c webpack/webpack.prod.config.js --progress --color",
+    "start": "webpack serve -c webpack/webpack.dev.config.js --progress --color",
+    "build": "webpack -c webpack/webpack.prod.config.js --progress --color",
     "build:analyze": "webpack -c webpack/webpack.prod.config.js --profile --json > stats.json && webpack-bundle-analyzer stats.json",
     "lint": "eslint --cache --cache-location ./.eslintcache --ext js,jsx ./src",
     "lint:debug": "eslint --cache --cache-location ./.eslintcache --ext js,jsx ./src --debug",

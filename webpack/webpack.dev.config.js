@@ -6,7 +6,7 @@ module.exports = {
   mode: 'development',
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, '../dist'),
+    path: path.resolve(__dirname, '../public'),
     filename: 'x-drag-toolbox-bundle.js',
   },
   module: {
@@ -28,7 +28,7 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        exclude: /node_modules\/(?!(react-grid-layout|react-resizable)\/).*/,
+        exclude: /node_modules\/(?!(antd|react-grid-layout|react-resizable)\/).*/,
         use: [
           'style-loader',
           'css-loader',
@@ -66,7 +66,7 @@ module.exports = {
     ],
   },
   devServer: {
-    contentBase: path.resolve(__dirname, '../dist'),
+    contentBase: path.resolve(__dirname, '../public'),
     port: 9001,
     historyApiFallback: true,
     inline: true,
@@ -89,7 +89,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: './public/index.html',
+      template: './template/index.html',
       filename: './index.html',
     }),
   ],

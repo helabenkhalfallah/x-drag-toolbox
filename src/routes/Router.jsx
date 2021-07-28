@@ -1,6 +1,6 @@
 import React, { Suspense, } from 'react';
 import {
-  BrowserRouter,
+  HashRouter,
   Route,
   Switch,
   Redirect,
@@ -24,7 +24,7 @@ const Router = () => (
     <Spin spinning />
   )}
   >
-    <BrowserRouter>
+    <HashRouter>
       <Switch>
         <Route
           exact
@@ -51,7 +51,7 @@ const Router = () => (
           to={TOOLBOX_PATH}
         />
       </Switch>
-    </BrowserRouter>
+    </HashRouter>
   </Suspense>
 );
 

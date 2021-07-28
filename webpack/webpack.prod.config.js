@@ -1,16 +1,12 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 const TerserPlugin = require('terser-webpack-plugin');
-// eslint-disable-next-line import/no-extraneous-dependencies
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-// eslint-disable-next-line import/no-extraneous-dependencies
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const path = require('path');
 
 module.exports = {
   mode: 'production',
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, '../dist'),
+    path: path.resolve(__dirname, '../public'),
     filename: 'x-drag-toolbox-bundle.js',
   },
   module: {
@@ -32,9 +28,8 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        exclude: /node_modules\/(?!(react-grid-layout|react-resizable)\/).*/,
+        exclude: /node_modules\/(?!(antd|react-grid-layout|react-resizable)\/).*/,
         use: [
-          'style-loader',
           'css-loader',
         ],
       },
@@ -42,7 +37,6 @@ module.exports = {
         test: /\.s[ac]ss$/i,
         exclude: /node_modules\/(?!(react-grid-layout|react-resizable)\/).*/,
         use: [
-          'style-loader',
           'css-loader',
           'sass-loader',
         ],
@@ -50,7 +44,6 @@ module.exports = {
       {
         test: /\.less$/,
         use: [
-          MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
           },
@@ -81,18 +74,12 @@ module.exports = {
       stream: false,
     },
   },
-  plugins: [
-    new MiniCssExtractPlugin({
-      filename: 'x-drag-toolbox-style.css',
-    }),
-  ],
   optimization: {
     minimize: true,
     minimizer: [
       new TerserPlugin({
         test: /\.js(\?.*)?$/i,
       }),
-      new CssMinimizerPlugin(),
     ],
   },
 };
